@@ -1,0 +1,163 @@
+body, html {
+	margin: 0;
+	padding: 0;
+  background-color: rgb(27, 27, 27);
+}
+
+/* Navigation Bar*/
+/* Navigation Bar Container*/
+.navContainer
+{
+    display: flex;
+    justify-content:right;
+}
+/* Navigation Bar Text*/
+.navText
+{
+    margin-top: 2%;
+    margin-right: 2%;
+    font-size: 250%;
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+}
+/* Navigation Bar Text on Hover*/
+.navText:hover
+{
+    color:red;
+}
+
+/* Container for Typewriter Effect */
+.cont 
+{
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+/* Typewriter Div */
+.typewriter h1 {
+    color: #fff;
+    font-family: 'DM Serif Display', serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 5 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-size:2vw;
+    animation: 
+      typing 3.5s steps(15, end),
+      blink-caret 1s step-end infinite;
+  }
+  /* The typing effect */
+  @keyframes typing 
+  {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret 
+  {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 0, 0) }
+  }
+
+/*The Project Card Container */
+.cards
+{
+  display: table;
+  width: 100%;
+  align-items: stretch;
+}
+
+* 
+{
+  box-sizing: border-box;
+}
+
+
+
+.circles
+{
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 5%;
+}
+.circle
+{
+  border-radius: 50%;
+  width:200px;
+  height:200px;
+  transition: 1s;
+}
+.titlee
+{
+  font-size: 250%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+}
+.one
+{
+  background-color: red;
+  animation: bounce 1s infinite;
+  animation-direction:alternate;
+}
+.one:hover
+{
+  animation-play-state: paused;
+  background-color: lightcoral;
+  scale: 1.25;
+}
+.one:hover .innercircle
+{
+  transform: scale(1.05);
+  animation: turn 1s infinite 1s;
+}
+.two
+{
+  background-color: green;
+  animation: bounce 1s infinite 1.5s;
+  animation-direction:alternate;
+}
+.two:hover
+{
+  animation-play-state: paused;
+}
+.three
+{
+  background-color: blue;
+  animation: bounce 1s infinite 2.5s;
+  animation-direction:alternate;
+}
+.three:hover
+{
+  animation-play-state: paused;
+}
+@keyframes bounce
+{
+  from 
+  {
+    transform:translateY(-15px);
+  }
+  to
+  {
+    transform: translateY(-25px);
+  }
+}
+
+.innercircle
+{
+  background-color: yellow;
+  position: absolute;
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  opacity:0;
+  transform: translateY(-100px) translateX(25px);
+}
+
+@keyframes turn
+{
+  from {}
+  to{opacity: 1;}
+}
