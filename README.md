@@ -6,6 +6,7 @@ Latest Update: (January 13th, 2023)
 -Will use 3 circles to seperate Projects, Certifications, and Contact Me.
 -When one category is selected, AKA the circle, 3-4 other circles with information will reveal themselves with an animation and on hover, it will grow bigger and animate more information about the category.
 -Kept the typwewriter animation (might change the animation, but generally it should be the same concept)
+(https://imgur.com/NEA7Y7C)
 
 Previous Update: (January 12th, 2023)
 -Uploaded all the files for the first version of the website. Nothing is final especially at this stage of development.
@@ -13,3 +14,4 @@ Previous Update: (January 12th, 2023)
 -Navigation menu at the top is still not final and might look different later on.
 -Color schemes will be different and a light/dark mode toggle will be added later on.
 -Card stacking will be tricky so will need to learn to manage them.
+(https://imgur.com/mrgMha3)
